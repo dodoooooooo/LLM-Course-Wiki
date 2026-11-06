@@ -1,6 +1,6 @@
 # 複習網頁目前狀態
 
-狀態：保留離線本機版，並已設定 GitHub Actions 從 main 建置／檢查，再發布 dist/ 到 GitHub Pages；網站與公開儲存庫入口見 README。
+狀態：保留離線本機版，並已設定 GitHub Actions 從 main 建置／檢查，再發布 dist/ 到 GitHub Pages；網站與公開儲存庫入口見 README；儲存庫已公開，Pages 工作流程尚受平台限制而未上線。
 
 - 課程首頁依 `wiki/courses/*/index.md` 自動列出課程，不限制課程數；高等軟體工程內分課程與測驗，兩者各四章。
 - 課程來自 Markdown，含表格、程式碼、來源頁碼及 SVG 圖例。
