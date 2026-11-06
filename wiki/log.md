@@ -67,3 +67,8 @@
 - 已確認公開儲存庫的 main 與本機提交一致，完整 raw 檔案逐一對照 Git 物件相符。
 - GitHub Pages 的建置與檔案上傳成功，但首次部署最後一步回報「Deployment failed, try again later」。重試失敗工作仍停在平台佇列、未產生工作，因此另以正常提交觸發完整發布。
 - README 加入 Actions 部署狀態入口與暫時 404 說明。公開儲存庫已可用，網站可用性以平台部署及實際瀏覽驗證為準，不將啟用設定當作已上線。
+
+## 2026-11-07｜Pages 改用專用發布產物
+- 分支直接發布兩次均在平台 deploy 最後一步失敗，未將問題誤報為網站已成功上線。
+- 依 GitHub 官方 Static HTML 工作流程新增 .github/workflows/pages.yml，推送 main 時 build／check，再只發布 dist/ 的自包含 index.html。Pages 來源改為 GitHub Actions，不再發布整個原始碼與教材目錄；原始教材仍在公開儲存庫完整保存。
+- 網站正文仍唯一維護於 Wiki，未另建手寫網站。

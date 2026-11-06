@@ -1,0 +1,38 @@
+name: 發布課程 Wiki
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 取得專案
+        uses: actions/checkout@v4
+      - name: 設定 Pages
+        uses: actions/configure-pages@v5
+      - name: 產生與檢查離線網站
+        run: |
+          python3 scripts/build.py
+          python3 scripts/check.py
+      - name: 僅上傳網站建置產物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: 發布網站
+        id: deployment
+        uses: actions/deploy-pages@v5

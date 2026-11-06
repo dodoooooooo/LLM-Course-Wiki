@@ -70,3 +70,6 @@
 
 ### Pages 初次部署限制
 公開儲存庫已驗證，原始教材與本機 Git 物件一致；Pages 的 build／upload 成功，但 deploy 第一次回報平台錯誤，重新執行失敗工作後仍停在佇列。已補上狀態入口並由新提交觸發完整發布；在實際站點可讀取前，不宣稱線上畫面已驗證。
+
+### 專用 Pages 工作流程
+GitHub 官方 Static HTML 範本作為來源，改為於 Actions 執行本專案 build.py／check.py，僅上傳 dist/。Pages 來源已切換為 GitHub Actions；原始教材在儲存庫保留，網站發布檔案約 1 MB，不再將教材與程式打入網站產物。最終站點狀態另以實際遠端部署驗證。
