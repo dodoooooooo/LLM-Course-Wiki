@@ -24,3 +24,11 @@ processed 指已完成本輪聲稱範圍的閱讀與綜整，不代表每項外�
 | HS-008 | [CWNANO_capture_traces(2).ipynb](sources/hs-008.md) | 24 cells、保存輸出與 cell 22 圖；未執行 | processed，無原 NPZ 獨立驗證 |
 | HS-009 | [作業分享對話](sources/hs-009.md) | 2026-11-06；可見兩份原題、16 bytes 補充 | partial，部分附件未取得 |
 | EXT-001～003 | [NIST FIPS 203／204／205 官方頁](sources/hs-010-standards.md) | 2026-11-06；名稱、用途與發布日 | processed，未逐條查規格與勘誤 |
+
+## 硬體安全論文
+
+| ID | 來源與摘要 | 版本／範圍 | 處理狀態 |
+| --- | --- | --- | --- |
+| HS-010 | [Racing against the clock](sources/hs-010.md) | 使用者提供 TCHES2026_2_02.pdf，23 頁；CC-BY 4.0；SHA-256 見摘要 | processed；正文與附錄整理，主要圖表已目視，未重現 |
+
+`hs-010-standards.md` 的來源 ID 仍為 EXT-001～003，不佔用 HS-010。

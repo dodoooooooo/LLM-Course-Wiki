@@ -82,3 +82,9 @@
 - 依使用者要求封存唯一的自訂 Pages 部署 workflow；沒有其他獨立檢查 workflow，build／check 保留於本機發布指令。
 - 新增 scripts/publish_pages.py 與 docs/publishing.md：main 保存完整原始專案，網站分支僅發布 index.html、.nojekyll，無 main 父歷史，不包含原始講義與 Notebook。
 - Pages 預定切換 Deploy from a branch、gh-pages／root；設定與實際發布結果另記驗證文件，不以推送成功宣稱上線。
+
+## 2026-11-07｜硬體安全新增指定論文報告
+- 使用者提供 TCHES2026_2_02.pdf；原檔以相同位元組歸檔，登記 HS-010。PDF p.1 明載 CC-BY 4.0，保留作者、DOI 與授權資訊。
+- 讀取 23 頁文字，另目視 p.2、8–17、23 的主要圖表及附錄；書目未逐篇追查，未執行程式、取得資料集或重現實驗。
+- 新增論文報告分類及導讀／各章重點／名詞解釋，更新索引、來源與待釐清。分類、搜尋、路由與閱讀分母由內容及設定產生，未修改前端或固定數量。
+- 明確區分作者結果、限制與 AI 報告建議；x86 CPA 未成功、TinyAES 僅 byte 12 明顯相關、RSA 示範及外推範圍均註明。報告時間與格式仍待提供。

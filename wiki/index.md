@@ -1,7 +1,7 @@
 # 課程複習 Wiki
 
 - [ADVANCED SOFTWARE ENGINEERING｜高等軟體工程](courses/advanced-software-engineering/index.md)：課程與測驗，各四章。
-- [HARDWARE SECURITY｜硬體安全](courses/hardware-security/index.md)：七個課程主題、兩份作業。
+- [HARDWARE SECURITY｜硬體安全](courses/hardware-security/index.md)：七個課程主題、兩份作業，以及[論文報告](courses/hardware-security/papers/index.md)。
 
 新增課程時，在 `wiki/courses/` 建立課程目錄與 `index.md`，並補上本頁入口；網頁首頁與側欄會在建置時自動更新，不限制課程數。
 

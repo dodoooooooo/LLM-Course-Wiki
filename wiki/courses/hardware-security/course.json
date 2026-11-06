@@ -13,6 +13,13 @@
       "label": "作業",
       "directory": "assignments",
       "kind": "assignment"
+    },
+    {
+      "id": "papers",
+      "label": "論文報告",
+      "directory": "papers",
+      "kind": "paper",
+      "trackReading": true
     }
   ],
   "pages": {
@@ -92,6 +99,27 @@
       "source": "HS-009",
       "status": "題目已整理，實測成果待補",
       "route": "/hs/assignments/2"
+    },
+    "papers/racing-against-the-clock.md": {
+      "short": "論文導讀與報告大綱",
+      "desc": "問題、貢獻、實驗界線與可能問答",
+      "order": 0,
+      "source": "HS-010",
+      "status": "閱讀整理，未重現實驗"
+    },
+    "papers/racing-against-the-clock-chapters.md": {
+      "short": "各章重點",
+      "desc": "依原文章節與附錄整理，附圖表讀法與頁次",
+      "order": 1,
+      "source": "HS-010",
+      "status": "閱讀整理，未重現實驗"
+    },
+    "papers/racing-against-the-clock-glossary.md": {
+      "short": "名詞解釋",
+      "desc": "時脈域、PLL、DMA、側通道與統計概念",
+      "order": 2,
+      "source": "HS-010",
+      "status": "閱讀整理，未重現實驗"
     }
   }
 }

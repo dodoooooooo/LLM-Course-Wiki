@@ -85,3 +85,9 @@ GitHub 官方 Static HTML 範本作為來源，改為於 Actions 執行本專案
 - GitHub 自動產生的 [pages build and deployment #4](https://github.com/dodoooooooo/LLM-Course-Wiki/actions/runs/42272632815) 的 build、report-build-status、deploy 全數 success。本次沒有回報先前的平台鎖定錯誤，沒有重新執行失敗工作，亦未修改付款或預算設定。
 - https://dodoooooooo.github.io/LLM-Course-Wiki/ 回傳 HTTP 200；瀏覽器實際顯示首頁、軟工課程入口、第一章測驗題目／控制項、硬體安全作業清單與作業一內文及圖像元素。
 - 本輪為發布驗證，未新增作答、清除或匯入使用者紀錄；未實測手機尺寸、檔案匯出／匯入及畫布觸控。先前記錄的失敗部署是歷史事件，不能代表此次發布結果。後續更新依 docs/publishing.md。
+
+## 2026-11-07｜硬體安全論文匯入
+- 使用者指定 TCHES2026_2_02.pdf，23 頁全文擷取；另目視 PDF p.2、8–17、23。原檔複製至 raw，SHA-256 與下載檔一致，來源 HS-010 記錄 CC-BY 4.0。原有教材未修改。
+- 新增 papers 分類與三篇導讀／章節／名詞頁；只修改內容及 course.json，未修改前端或路由程式，既有題目及紀錄 ID 保留。
+- build.py、check.py 通過，包含動態分類、課程擴充、搜尋、來源、判分與舊紀錄相容性；56 頁、81 題、12 個 PDF 來源雜湊為本次實際快照。
+- 本輪沒有執行論文程式、重現攻擊或生成實測結果。原文概括主張與細部結果分開記錄，TinyAES 單一 byte、RSA 暫態與時間外推均明示。
