@@ -19,8 +19,7 @@
       "label": "論文報告",
       "directory": "papers",
       "kind": "paper",
-      "trackReading": true,
-      "showIntro": true
+      "trackReading": true
     }
   ],
   "pages": {
