@@ -1,0 +1,11 @@
+derived/*
+!derived/.gitkeep
+.DS_Store
+.env
+.env.*
+node_modules/
+dist/
+
+# Python 建置快取
+__pycache__/
+*.py[cod]

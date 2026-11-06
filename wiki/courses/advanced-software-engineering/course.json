@@ -1,0 +1,94 @@
+{
+  "route": "/ase",
+  "sections": [
+    {
+      "id": "lessons",
+      "label": "課程",
+      "directory": "lessons",
+      "kind": "lesson",
+      "trackReading": true
+    },
+    {
+      "id": "reviews",
+      "label": "測驗",
+      "directory": "reviews",
+      "route": "tests",
+      "kind": "quiz"
+    }
+  ],
+  "pages": {
+    "lessons/chapter-01.md": {
+      "short": "軟體工程導論",
+      "desc": "軟體定義、品質與工程責任",
+      "file": "slide01t_intro.pdf",
+      "pages": 71,
+      "source": "ASE-001",
+      "route": "/ase/lessons/1",
+      "readKey": "1"
+    },
+    "reviews/chapter-01.md": {
+      "route": "/ase/tests/1",
+      "quizKey": "1",
+      "recordChapter": 1,
+      "lesson": "lessons/chapter-01.md",
+      "short": "軟體工程導論",
+      "pages": 71,
+      "source": "ASE-001"
+    },
+    "lessons/chapter-02.md": {
+      "short": "軟體流程與開發方法學",
+      "desc": "模型、敏捷與工程實踐",
+      "file": "slide02t_process.pdf",
+      "pages": 96,
+      "source": "ASE-002",
+      "route": "/ase/lessons/2",
+      "readKey": "2"
+    },
+    "reviews/chapter-02.md": {
+      "route": "/ase/tests/2",
+      "quizKey": "2",
+      "recordChapter": 2,
+      "lesson": "lessons/chapter-02.md",
+      "short": "軟體流程與開發方法學",
+      "pages": 96,
+      "source": "ASE-002"
+    },
+    "lessons/chapter-03.md": {
+      "short": "需求工程",
+      "desc": "分類、擷取與需求驗證",
+      "file": "slide03t_reqt.pdf",
+      "pages": 71,
+      "source": "ASE-003",
+      "route": "/ase/lessons/3",
+      "readKey": "3"
+    },
+    "reviews/chapter-03.md": {
+      "route": "/ase/tests/3",
+      "quizKey": "3",
+      "recordChapter": 3,
+      "lesson": "lessons/chapter-03.md",
+      "short": "需求工程",
+      "pages": 71,
+      "source": "ASE-003"
+    },
+    "lessons/chapter-04.md": {
+      "short": "系統塑模與 UML",
+      "desc": "模型用途、箭頭與圖表判讀",
+      "file": "slide04t_model.pdf",
+      "pages": 136,
+      "source": "ASE-004",
+      "route": "/ase/lessons/4",
+      "readKey": "4"
+    },
+    "reviews/chapter-04.md": {
+      "route": "/ase/tests/4",
+      "quizKey": "4",
+      "recordChapter": 4,
+      "lesson": "lessons/chapter-04.md",
+      "short": "系統塑模與 UML",
+      "pages": 136,
+      "source": "ASE-004"
+    }
+  },
+  "accent": "#52a9ff"
+}

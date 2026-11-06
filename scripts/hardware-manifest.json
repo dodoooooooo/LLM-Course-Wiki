@@ -1,0 +1,86 @@
+{
+  "_deprecated": "歷史匯入快照；建置不再讀取。現行分類及頁面設定在所屬課程 course.json。",
+  "lessons": [
+    {
+      "id": 1,
+      "slug": "01-introduction",
+      "short": "硬體安全導論與威脅模型",
+      "file": "Hardware Security Introduction.pdf",
+      "pages": 49,
+      "source": "HS-001",
+      "desc": "安全目標、攻擊分類與防禦假設"
+    },
+    {
+      "id": 2,
+      "slug": "02-cryptography",
+      "short": "密碼學基礎與 AES",
+      "file": "Hardware Security Cryptography.pdf",
+      "pages": 87,
+      "source": "HS-002",
+      "desc": "金鑰、雜湊、隨機性與第一輪 S-box"
+    },
+    {
+      "id": 3,
+      "slug": "03-ic-power",
+      "short": "IC 設計與功耗來源",
+      "file": "Hardware Security-IC design and power consumption-2020.pdf",
+      "pages": 36,
+      "source": "HS-003",
+      "desc": "CMOS、切換能量與 HW／HD"
+    },
+    {
+      "id": 4,
+      "slug": "04-trace-statistics",
+      "short": "功耗軌跡、SNR 與統計",
+      "file": "Hardware Security-Characteristics of power traces-2020.pdf",
+      "pages": 28,
+      "source": "HS-004",
+      "desc": "條件變異、相關性與統計信心"
+    },
+    {
+      "id": 5,
+      "slug": "05-dpa-cpa",
+      "short": "DPA、CPA 與洩漏模型",
+      "file": "Hardware Security-DPA-2020.pdf",
+      "pages": 38,
+      "source": "HS-005",
+      "desc": "模型吻合、曲線判讀與樣本數"
+    },
+    {
+      "id": 6,
+      "slug": "06-template-attacks",
+      "short": "模板攻擊與機率判讀",
+      "file": "Hardware Security Template Attacks.pdf",
+      "pages": 19,
+      "source": "HS-006",
+      "desc": "高斯模板、共變異數與最大似然"
+    },
+    {
+      "id": 7,
+      "slug": "07-pqc",
+      "short": "後量子密碼與 ML-KEM",
+      "file": "Hardware Security PQC.pdf",
+      "pages": 36,
+      "source": "HS-007",
+      "desc": "標準、格、NTT 與金鑰封裝"
+    }
+  ],
+  "assignments": [
+    {
+      "id": 1,
+      "slug": "assignment-01-snr",
+      "short": "AES 功耗軌跡與 SNR",
+      "desc": "51,200 條軌跡、十六個 S-box HW 與保存成果導讀",
+      "source": "HS-008／HS-009",
+      "status": "已有 Notebook 保存成果"
+    },
+    {
+      "id": 2,
+      "slug": "assignment-02-cpa",
+      "short": "CPA 與十六個 key bytes",
+      "desc": "兩類圖的要求、判讀方式與結果紀錄框架",
+      "source": "HS-009",
+      "status": "題目已整理，實測成果待補"
+    }
+  ]
+}

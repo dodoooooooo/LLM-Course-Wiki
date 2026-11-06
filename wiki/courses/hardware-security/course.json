@@ -1,0 +1,97 @@
+{
+  "route": "/hs",
+  "sections": [
+    {
+      "id": "lessons",
+      "label": "課程",
+      "directory": "lessons",
+      "kind": "lesson",
+      "trackReading": true
+    },
+    {
+      "id": "assignments",
+      "label": "作業",
+      "directory": "assignments",
+      "kind": "assignment"
+    }
+  ],
+  "pages": {
+    "lessons/01-introduction.md": {
+      "short": "硬體安全導論與威脅模型",
+      "file": "Hardware Security Introduction.pdf",
+      "pages": 49,
+      "source": "HS-001",
+      "desc": "安全目標、攻擊分類與防禦假設",
+      "route": "/hs/lessons/1",
+      "readKey": "hs-lesson-1"
+    },
+    "lessons/02-cryptography.md": {
+      "short": "密碼學基礎與 AES",
+      "file": "Hardware Security Cryptography.pdf",
+      "pages": 87,
+      "source": "HS-002",
+      "desc": "金鑰、雜湊、隨機性與第一輪 S-box",
+      "route": "/hs/lessons/2",
+      "readKey": "hs-lesson-2"
+    },
+    "lessons/03-ic-power.md": {
+      "short": "IC 設計與功耗來源",
+      "file": "Hardware Security-IC design and power consumption-2020.pdf",
+      "pages": 36,
+      "source": "HS-003",
+      "desc": "CMOS、切換能量與 HW／HD",
+      "route": "/hs/lessons/3",
+      "readKey": "hs-lesson-3"
+    },
+    "lessons/04-trace-statistics.md": {
+      "short": "功耗軌跡、SNR 與統計",
+      "file": "Hardware Security-Characteristics of power traces-2020.pdf",
+      "pages": 28,
+      "source": "HS-004",
+      "desc": "條件變異、相關性與統計信心",
+      "route": "/hs/lessons/4",
+      "readKey": "hs-lesson-4"
+    },
+    "lessons/05-dpa-cpa.md": {
+      "short": "DPA、CPA 與洩漏模型",
+      "file": "Hardware Security-DPA-2020.pdf",
+      "pages": 38,
+      "source": "HS-005",
+      "desc": "模型吻合、曲線判讀與樣本數",
+      "route": "/hs/lessons/5",
+      "readKey": "hs-lesson-5"
+    },
+    "lessons/06-template-attacks.md": {
+      "short": "模板攻擊與機率判讀",
+      "file": "Hardware Security Template Attacks.pdf",
+      "pages": 19,
+      "source": "HS-006",
+      "desc": "高斯模板、共變異數與最大似然",
+      "route": "/hs/lessons/6",
+      "readKey": "hs-lesson-6"
+    },
+    "lessons/07-pqc.md": {
+      "short": "後量子密碼與 ML-KEM",
+      "file": "Hardware Security PQC.pdf",
+      "pages": 36,
+      "source": "HS-007",
+      "desc": "標準、格、NTT 與金鑰封裝",
+      "route": "/hs/lessons/7",
+      "readKey": "hs-lesson-7"
+    },
+    "assignments/assignment-01-snr.md": {
+      "short": "AES 功耗軌跡與 SNR",
+      "desc": "51,200 條軌跡、十六個 S-box HW 與保存成果導讀",
+      "source": "HS-008／HS-009",
+      "status": "已有 Notebook 保存成果",
+      "route": "/hs/assignments/1"
+    },
+    "assignments/assignment-02-cpa.md": {
+      "short": "CPA 與十六個 key bytes",
+      "desc": "兩類圖的要求、判讀方式與結果紀錄框架",
+      "source": "HS-009",
+      "status": "題目已整理，實測成果待補",
+      "route": "/hs/assignments/2"
+    }
+  }
+}
