@@ -34,6 +34,22 @@ input[type="checkbox"], input[type="radio"] { accent-color: var(--ink); width: 1
 .navitem.active { background: var(--accent); border-color: var(--ink); box-shadow: 3px 3px 0 var(--ink); }
 .navitem:active:not(:disabled) { transform: translate(2px,2px); box-shadow: none; }
 .navitem .num { font: 800 12px/1.4 var(--mono); border: 2px solid var(--ink); background: var(--paper); min-width: 26px; padding: 2px; text-align: center; }
+.navitem { text-decoration: none; }
+.navsection { border-left: 2px solid var(--ink); margin: 8px 0 12px 13px; padding-left: 10px; }
+.navsection summary { padding: 10px 6px; min-height: 44px; cursor: pointer; font-size: 13px; font-weight: 850; overflow-wrap: anywhere; }
+.navsection summary:hover, .navsection[open] summary { background: var(--accent); }
+.navsection-link { display: block; padding: 9px 6px; font-size: 12px; font-weight: 800; }
+.navpages { list-style: none; padding: 0; margin: 0; }
+.navpages a { display: block; min-height: 44px; padding: 10px 8px; border: 2px solid transparent; font-size: 12px; line-height: 1.6; text-decoration: none; overflow-wrap: anywhere; }
+.navpages a:hover, .navsection-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.navpages a[aria-current="page"] { background: var(--accent); border-color: var(--ink); font-weight: 850; box-shadow: 2px 2px 0 var(--ink); }
+.navpages a:active, .navsection-link:active { transform: translate(2px,2px); }
+.section-subtitle, .article-subtitle { overflow-wrap: anywhere; color: var(--ink); font-weight: 750; line-height: 1.7; }
+.content > .section-subtitle { font-size: clamp(18px,2.4vw,25px); border-left: 6px solid var(--ink); padding-left: 16px; margin: -12px 0 28px; }
+.navsection .section-subtitle { font-size: 11px; margin: 2px 6px 8px; }
+.card .section-subtitle, .card .article-subtitle { font-size: 13px; color: var(--ink); margin: 0 0 18px; }
+.article > .article-subtitle { font-size: 14px; padding-bottom: 16px; margin: 0 0 24px; border-bottom: 2px solid var(--ink); }
+.section-intro { margin: 0 0 28px; }
 .sidefoot { margin-top: auto; padding: 35px 5px 0; font-size: 11px; color: var(--muted); }
 .sidefoot strong { font-size: 13px; font-weight: 850; color: var(--ink); }
 .main { margin-left: 238px; flex: 1; min-width: 0; }

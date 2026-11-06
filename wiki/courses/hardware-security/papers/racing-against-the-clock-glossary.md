@@ -1,6 +1,7 @@
 ---
 id: hs-paper-racing-against-the-clock-glossary
 title: Racing against the clock｜名詞解釋
+subtitle: Racing against the clock: side-channel leakage from crossing asynchronous clock domains
 course: hardware-security
 type: concept
 status: verified

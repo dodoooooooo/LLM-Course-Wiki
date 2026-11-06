@@ -123,3 +123,8 @@ https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 - 公開儲存庫 https://github.com/dodoooooooo/LLM-Course-Wiki 的 main 保留完整原始專案；Pages 改用 Deploy from a branch，來源 gh-pages、/(root)。gh-pages 只含建置後 index.html 與 .nojekyll，不帶 raw、Notebook 或 main 歷史。
 - 自訂部署 workflow 已封存於 docs/archived-workflows/pages.yml.disabled，勿恢復每次推送自動部署；保留 build.py／check.py 驗證。日後依 docs/publishing.md，先提交推送 main，再執行 python3 scripts/publish_pages.py。新增內容不需修改發布程式。
 - 分支發布仍依賴 GitHub Pages 平台自動化；推送成功不等於已上線。遇到帳務鎖定等平台限制時停止反覆重試，回報完整錯誤，不變更付款設定或預算。
+
+## 17. 側欄與分類副標（2026-11-07）
+- 側欄的小標與連結從分類 pageIds 及頁面短標產生；所在分類自動展開，使用原生連結、目前頁標示及鍵盤可操作的收合控制，不能另列固定章節陣列。
+- 分類副標取自分類 index.md 的 YAML subtitle；需要分類介紹時在 course.json 該分類設定 showIntro: true，正文仍來自該索引 Markdown。內容頁可用 YAML subtitle 辨識所屬論文，勿在前端硬編論文名稱。
+- 作者與期刊介紹附來源、查閱日期，區分論文當時署名與現職，不猜測職稱、作者分工或排名。

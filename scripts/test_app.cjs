@@ -35,6 +35,11 @@ for(const c of DATA.courses){
  for(const s of c.sections){
   location.hash='#'+s.path;render();assert.ok(document.querySelector('#courseNav').innerHTML.includes(esc(s.label)));
   const html=sectionPage(c,s);assert.ok(html.includes(s.pageIds.length+' 篇')||!s.pageIds.length);
+  const nav=document.querySelector('#courseNav').innerHTML;
+  assert.ok(nav.includes('href="#'+esc(s.path)+'"'));
+  for(const id of s.pageIds){const page=pageById(id);assert.ok(nav.includes('href="#'+esc(page.path)+'"'),page.path);assert.ok(nav.includes(esc(page.short)),page.short);location.hash='#'+page.path;render();const selected='href="#'+esc(page.path)+'" data-nav-link aria-current="page"';assert.ok(document.querySelector('#courseNav').innerHTML.includes(selected),page.path)}
+  if(s.subtitle){assert.ok(html.includes(esc(s.subtitle)));assert.ok(coursePage(c).includes(esc(s.subtitle)))}
+  if(s.showIntro&&s.indexId)assert.ok(html.includes(pageById(s.indexId).html));
  }
 }
 for(const path of Object.keys(DATA.routes)){location.hash='#'+path;assert.doesNotThrow(()=>render(),path)}

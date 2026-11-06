@@ -1,6 +1,7 @@
 ---
 id: hs-paper-racing-against-the-clock-chapters
 title: Racing against the clock｜各章重點
+subtitle: Racing against the clock: side-channel leakage from crossing asynchronous clock domains
 course: hardware-security
 type: paper
 status: verified

@@ -134,13 +134,14 @@ def build(root=ROOT):
             section_route = route + '/' + settings.get('route', section_id)
             section = dict(id=section_id, label=settings['label'], path=section_route,
                            kind=settings.get('kind', 'article'),
-                           trackReading=settings.get('trackReading', False), pageIds=[])
+                           trackReading=settings.get('trackReading', False), showIntro=settings.get('showIntro', False), pageIds=[])
             course['sections'].append(section)
             section_index = folder / 'index.md'
             if section_index.exists():
                 entry = register(section_index, section_route, courseId=course_id,
                                  sectionId=section_id, kind='section')
                 section['indexId'] = entry['id']
+                section['subtitle'] = entry['metadata'].get('subtitle', '')
             else:
                 if section_route in routes:
                     raise ValueError(f'路由重複：{section_route}')

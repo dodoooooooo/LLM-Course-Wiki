@@ -32,3 +32,5 @@ processed 指已完成本輪聲稱範圍的閱讀與綜整，不代表每項外�
 | HS-010 | [Racing against the clock](sources/hs-010.md) | 使用者提供 TCHES2026_2_02.pdf，23 頁；CC-BY 4.0；SHA-256 見摘要 | processed；正文與附錄整理，主要圖表已目視，未重現 |
 
 `hs-010-standards.md` 的來源 ID 仍為 EXT-001～003，不佔用 HS-010。
+
+| EXT-004～005 | [作者與 TCHES 背景官方來源](sources/hs-011-authors-journal.md) | 2026-11-07；個人簡介與官方出版模式說明 | processed；官方人物簡介及 IACR 簡報 p.10 文字，非全文 |
