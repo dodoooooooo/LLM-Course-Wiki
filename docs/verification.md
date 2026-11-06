@@ -91,3 +91,4 @@ GitHub 官方 Static HTML 範本作為來源，改為於 Actions 執行本專案
 - 新增 papers 分類與三篇導讀／章節／名詞頁；只修改內容及 course.json，未修改前端或路由程式，既有題目及紀錄 ID 保留。
 - build.py、check.py 通過，包含動態分類、課程擴充、搜尋、來源、判分與舊紀錄相容性；56 頁、81 題、12 個 PDF 來源雜湊為本次實際快照。
 - 本輪沒有執行論文程式、重現攻擊或生成實測結果。原文概括主張與細部結果分開記錄，TinyAES 單一 byte、RSA 暫態與時間外推均明示。
+- 發布驗證：[Pages #5](https://github.com/dodoooooooo/LLM-Course-Wiki/actions/runs/42276305456) 成功，gh-pages f031d5d。瀏覽器已確認首頁新增論文報告三篇、硬體安全第三分類、三篇入口與各章重點正文／來源路由。未實測手機尺寸或變更使用者閱讀紀錄。
