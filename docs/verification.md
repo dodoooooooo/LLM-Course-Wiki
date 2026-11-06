@@ -67,3 +67,6 @@
 - GitHub 儲存庫確認為 public；首次提交包含完整 Wiki、程式、原始教材與離線 index.html，排除 Python 快取、重複 dist 及 derived 中間資料。derived 僅留空目錄佔位檔。
 - 原專案 build.py、check.py 通過，待提交檔案的常見憑證格式掃描未命中。GitHub Pages 已設定 main／root，強制 HTTPS。
 - 線上版有獨立瀏覽器來源，本機學習紀錄須自行用 JSON 匯出／匯入，不宣稱自動同步。
+
+### Pages 初次部署限制
+公開儲存庫已驗證，原始教材與本機 Git 物件一致；Pages 的 build／upload 成功，但 deploy 第一次回報平台錯誤，重新執行失敗工作後仍停在佇列。已補上狀態入口並由新提交觸發完整發布；在實際站點可讀取前，不宣稱線上畫面已驗證。

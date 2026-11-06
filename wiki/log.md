@@ -62,3 +62,8 @@
 - 完整專案已推送至 https://github.com/dodoooooooo/LLM-Course-Wiki ，遠端可見性為 public，包含使用者已授權公開的原始講義及 Notebook。
 - 啟用 GitHub Pages：main 分支、根目錄；網站網址為 https://dodoooooooo.github.io/LLM-Course-Wiki/ 。README 加入線上入口與後續更新流程。
 - 本機原檔保留，Git 作者使用 GitHub noreply 信箱；原瀏覽器紀錄不會跨來源自動同步，仍以匯出／匯入搬移。網站實際可用性於發布後另驗證。
+
+## 2026-11-07｜公開遠端驗證與 Pages 狀態
+- 已確認公開儲存庫的 main 與本機提交一致，完整 raw 檔案逐一對照 Git 物件相符。
+- GitHub Pages 的建置與檔案上傳成功，但首次部署最後一步回報「Deployment failed, try again later」。重試失敗工作仍停在平台佇列、未產生工作，因此另以正常提交觸發完整發布。
+- README 加入 Actions 部署狀態入口與暫時 404 說明。公開儲存庫已可用，網站可用性以平台部署及實際瀏覽驗證為準，不將啟用設定當作已上線。
