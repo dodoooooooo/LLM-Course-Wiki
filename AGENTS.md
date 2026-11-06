@@ -120,4 +120,6 @@ https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 - 保留本機原檔；排除 .env、憑證、系統檔案、Python 快取、derived 中間產物及重複 dist。原始課程與題庫保留。
 - 公開不等同變更教師教材或第三方套件的授權；不替第三方內容新增統一授權條款。
 
-- 已建立公開儲存庫 https://github.com/dodoooooooo/LLM-Course-Wiki ，Pages 由 main 分支的 `.github/workflows/pages.yml` 重新 build／check 後，只發布 dist/ 產物，網站網址為 https://dodoooooooo.github.io/LLM-Course-Wiki/ 。後續修改仍須 build／check 後提交推送，不直接維護第二份網站正文。
+- 公開儲存庫 https://github.com/dodoooooooo/LLM-Course-Wiki 的 main 保留完整原始專案；Pages 改用 Deploy from a branch，來源 gh-pages、/(root)。gh-pages 只含建置後 index.html 與 .nojekyll，不帶 raw、Notebook 或 main 歷史。
+- 自訂部署 workflow 已封存於 docs/archived-workflows/pages.yml.disabled，勿恢復每次推送自動部署；保留 build.py／check.py 驗證。日後依 docs/publishing.md，先提交推送 main，再執行 python3 scripts/publish_pages.py。新增內容不需修改發布程式。
+- 分支發布仍依賴 GitHub Pages 平台自動化；推送成功不等於已上線。遇到帳務鎖定等平台限制時停止反覆重試，回報完整錯誤，不變更付款設定或預算。

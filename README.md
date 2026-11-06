@@ -5,7 +5,9 @@
 - [課程 Wiki 網站網址（尚未上線）](https://dodoooooooo.github.io/LLM-Course-Wiki/)
 - [GitHub 公開儲存庫](https://github.com/dodoooooooo/LLM-Course-Wiki)
 
-目前發布工作流程在平台端尚無法啟動，網站未正式上線；公開儲存庫與離線版可正常使用。排除平台限制後，網站由 main 分支的 GitHub Actions 建置並發布 dist/ 產物；[GitHub Actions 部署狀態](https://github.com/dodoooooooo/LLM-Course-Wiki/actions)可確認是否已完成。首次部署或重新發布尚未完成時，網站可能暫時顯示 404。後續修改 Markdown 後，先 build／check，再提交並推送，GitHub Pages 會更新網站。瀏覽器學習紀錄不會從本機檔案自動搬到線上站點；可先匯出 JSON，再於線上版匯入。
+網站尚未正式上線；公開儲存庫與離線版可使用。Pages 改用 **Deploy from a branch → gh-pages → /(root)**，網站分支僅含 `index.html` 與 `.nojekyll`，完整原始專案保留在 main。原自訂部署 workflow 已封存，更新請依[發布說明](docs/publishing.md)，提交推送 main 後執行 `python3 scripts/publish_pages.py`。分支發布仍需 GitHub 平台完成自動部署；以 [Actions 狀態](https://github.com/dodoooooooo/LLM-Course-Wiki/actions)及實際站點為準，不將設定完成當成上線成功。
+
+瀏覽器學習紀錄不會從本機檔案自動搬到線上站點；可先匯出 JSON，再於線上版匯入。
 
 ## 公開版本
 

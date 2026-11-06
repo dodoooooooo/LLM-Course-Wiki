@@ -77,3 +77,8 @@
 - 完整專案與原始教材已公開上傳，遠端 main 可存取，來源及紀錄識別碼保留。
 - 專用 Pages 工作流程在執行任何步驟前遭平台拒絕啟動，須先由使用者處理平台端限制；不宣稱站點上線，也不記錄或公開帳戶私密資訊。
 - README 已將網站入口標為尚未上線；公開儲存庫及本機離線網站可使用。發布設定保留，平台恢復後可重新執行工作流程。
+
+## 2026-11-07｜改用專用 gh-pages 分支發布
+- 依使用者要求封存唯一的自訂 Pages 部署 workflow；沒有其他獨立檢查 workflow，build／check 保留於本機發布指令。
+- 新增 scripts/publish_pages.py 與 docs/publishing.md：main 保存完整原始專案，網站分支僅發布 index.html、.nojekyll，無 main 父歷史，不包含原始講義與 Notebook。
+- Pages 預定切換 Deploy from a branch、gh-pages／root；設定與實際發布結果另記驗證文件，不以推送成功宣稱上線。
