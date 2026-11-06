@@ -76,3 +76,12 @@ GitHub 官方 Static HTML 範本作為來源，改為於 Actions 執行本專案
 
 ### 最終發布結果
 公開儲存庫、完整原始教材與離線網站已成功提交推送；main 遠端與本機一致。專用 Pages 工作流程在第一個執行步驟前即受平台端限制拒絕啟動，並非已通過線上部署；README 明確標記尚未上線。需使用者處理平台限制後重新發布，線上畫面與手機測試仍未完成。
+
+## 2026-11-07｜gh-pages 分支發布實測成功
+- Pages 原設定為 GitHub Actions；唯一自訂部署 workflow 已移至 docs/archived-workflows/pages.yml.disabled，不再於 push main 執行。沒有其他獨立檢查 workflow；本機建置與檢查保留。
+- 已儲存 Deploy from a branch、gh-pages、/(root)，HTTPS 維持啟用。
+- main 58bee48 保留完整原始專案；首次 gh-pages d55ab7339d5adbbb5ce7798a288ea2d4bead8626 無父提交，樹中僅 index.html 與空白 .nojekyll。HTML 與本機 dist/index.html 逐位元一致，未包含 raw、PDF、Notebook 或 main 歷史。
+- 發布指令實際執行 build.py、check.py 均通過，涵蓋動態擴充課程與舊紀錄相容性、81 題及 11 份 PDF 雜湊；未修改原始教材。再次執行相同產物時正常略過推送，沒有重複觸發部署。
+- GitHub 自動產生的 [pages build and deployment #4](https://github.com/dodoooooooo/LLM-Course-Wiki/actions/runs/42272632815) 的 build、report-build-status、deploy 全數 success。本次沒有回報先前的平台鎖定錯誤，沒有重新執行失敗工作，亦未修改付款或預算設定。
+- https://dodoooooooo.github.io/LLM-Course-Wiki/ 回傳 HTTP 200；瀏覽器實際顯示首頁、軟工課程入口、第一章測驗題目／控制項、硬體安全作業清單與作業一內文及圖像元素。
+- 本輪為發布驗證，未新增作答、清除或匯入使用者紀錄；未實測手機尺寸、檔案匯出／匯入及畫布觸控。先前記錄的失敗部署是歷史事件，不能代表此次發布結果。後續更新依 docs/publishing.md。

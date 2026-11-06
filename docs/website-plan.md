@@ -1,6 +1,6 @@
 # 複習網頁目前狀態
 
-狀態：保留離線本機版；完整原始專案在 main，GitHub Pages 改用 Deploy from a branch、gh-pages／root，只發布建置產物。原自訂 Actions 部署已封存，更新方式見 [發布說明](publishing.md)。儲存庫已公開，網站成功與否須由實際部署驗證，目前仍標記尚未上線。
+狀態：保留離線本機版；完整原始專案在 main，GitHub Pages 改用 Deploy from a branch、gh-pages／root，只發布建置產物。原自訂 Actions 部署已封存，更新方式見 [發布說明](publishing.md)。儲存庫已公開；2026-11-07 的 gh-pages 建置／部署成功，站點回傳 HTTP 200，已於瀏覽器確認首頁、課程入口、題庫及作業內文。
 
 - 課程首頁依 `wiki/courses/*/index.md` 自動列出課程，不限制課程數；高等軟體工程內分課程與測驗，兩者各四章。
 - 課程來自 Markdown，含表格、程式碼、來源頁碼及 SVG 圖例。

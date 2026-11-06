@@ -2,10 +2,10 @@
 
 ## 線上使用
 
-- [課程 Wiki 網站網址（尚未上線）](https://dodoooooooo.github.io/LLM-Course-Wiki/)
+- [課程 Wiki 網站](https://dodoooooooo.github.io/LLM-Course-Wiki/)
 - [GitHub 公開儲存庫](https://github.com/dodoooooooo/LLM-Course-Wiki)
 
-網站尚未正式上線；公開儲存庫與離線版可使用。Pages 改用 **Deploy from a branch → gh-pages → /(root)**，網站分支僅含 `index.html` 與 `.nojekyll`，完整原始專案保留在 main。原自訂部署 workflow 已封存，更新請依[發布說明](docs/publishing.md)，提交推送 main 後執行 `python3 scripts/publish_pages.py`。分支發布仍需 GitHub 平台完成自動部署；以 [Actions 狀態](https://github.com/dodoooooooo/LLM-Course-Wiki/actions)及實際站點為準，不將設定完成當成上線成功。
+網站已於 2026-11-07 實際發布成功，公開儲存庫與離線版也可使用。Pages 改用 **Deploy from a branch → gh-pages → /(root)**，網站分支僅含 `index.html` 與 `.nojekyll`，完整原始專案保留在 main。原自訂部署 workflow 已封存，更新請依[發布說明](docs/publishing.md)，提交推送 main 後執行 `python3 scripts/publish_pages.py`。分支發布仍需 GitHub 平台完成自動部署；以 [Actions 狀態](https://github.com/dodoooooooo/LLM-Course-Wiki/actions)及實際站點為準，不將設定完成當成上線成功。
 
 瀏覽器學習紀錄不會從本機檔案自動搬到線上站點；可先匯出 JSON，再於線上版匯入。
 
