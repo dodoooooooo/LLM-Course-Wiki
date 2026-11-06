@@ -94,4 +94,4 @@ python3 scripts/check.py
 
 ## 側欄、小標與分類介紹
 
-目前課程的分類可展開顯示各內容頁的短標與原生連結，所在分類自動展開；頁面名稱取自 Markdown 或 pages 的 short，新增內容無須改側欄。分類 index.md 可填 YAML subtitle 作副標；內容頁亦可填 subtitle，供卡片與正文標示論文名稱等背景。course.json 的分類可選 showIntro: true，於分類頁顯示索引 Markdown 正文，適合作者、期刊及閱讀介紹。未設定時維持原有清單頁，不強迫所有課程使用相同內容結構。
+目前課程的分類可展開顯示各內容頁的短標與原生連結，所有分類預設收合，點擊分類標題後才展開，不因目前頁面自動打開；頁面名稱取自 Markdown 或 pages 的 short，新增內容無須改側欄。分類 index.md 可填 YAML subtitle 作副標；內容頁亦可填 subtitle，供卡片與正文標示論文名稱等背景。course.json 的分類可選 showIntro: true，於分類頁顯示索引 Markdown 正文，適合作者、期刊及閱讀介紹。未設定時維持原有清單頁，不強迫所有課程使用相同內容結構。
