@@ -1,5 +1,12 @@
 # LLM Course Wiki｜課程複習
 
+## 線上使用
+
+- [直接開啟課程 Wiki](https://dodoooooooo.github.io/LLM-Course-Wiki/)
+- [GitHub 公開儲存庫](https://github.com/dodoooooooo/LLM-Course-Wiki)
+
+網站由 main 分支根目錄發布。後續修改 Markdown 後，先 build／check，再提交並推送，GitHub Pages 會更新網站。瀏覽器學習紀錄不會從本機檔案自動搬到線上站點；可先匯出 JSON，再於線上版匯入。
+
 ## 公開版本
 
 本儲存庫依專案擁有人 2026-11-07 的明確授權公開，包含 `raw/` 原始講義與 Notebook。教師教材與第三方內容仍依原作者權利及原授權條件使用；本專案不替其另行授權。

@@ -57,3 +57,8 @@
 - 使用者要求 GitHub 公開連結，並明確確認既有原始講義與 Notebook 可一併公開。
 - 準備公開儲存庫與靜態網站：保留 raw、Wiki、題庫與版面來源；排除快取、derived 與重複 dist，加入 .nojekyll 供靜態網站使用。
 - 常見憑證格式掃描未發現金鑰；未代替第三方教材變更授權。發布結果待遠端驗證後記錄。
+
+## 2026-11-07｜GitHub 公開儲存庫與 Pages
+- 完整專案已推送至 https://github.com/dodoooooooo/LLM-Course-Wiki ，遠端可見性為 public，包含使用者已授權公開的原始講義及 Notebook。
+- 啟用 GitHub Pages：main 分支、根目錄；網站網址為 https://dodoooooooo.github.io/LLM-Course-Wiki/ 。README 加入線上入口與後續更新流程。
+- 本機原檔保留，Git 作者使用 GitHub noreply 信箱；原瀏覽器紀錄不會跨來源自動同步，仍以匯出／匯入搬移。網站實際可用性於發布後另驗證。

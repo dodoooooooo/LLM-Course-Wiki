@@ -119,3 +119,5 @@ https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
 - 使用者要求上傳 GitHub 並取得公開連結，且明確確認「原始教材也公開，我已確認可公開分享」；本次可公開原專案與既有 raw 講義、Notebook。此授權不自動適用未來新增的第三方或私人來源。
 - 保留本機原檔；排除 .env、憑證、系統檔案、Python 快取、derived 中間產物及重複 dist。原始課程與題庫保留。
 - 公開不等同變更教師教材或第三方套件的授權；不替第三方內容新增統一授權條款。
+
+- 已建立公開儲存庫 https://github.com/dodoooooooo/LLM-Course-Wiki ，Pages 由 main 根目錄發布，網站網址為 https://dodoooooooo.github.io/LLM-Course-Wiki/ 。後續修改仍須 build／check 後提交推送，不直接維護第二份網站正文。
